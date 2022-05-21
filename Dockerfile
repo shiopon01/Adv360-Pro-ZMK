@@ -1,10 +1,21 @@
-FROM zmkfirmware/zmk-build-arm:2.4
+FROM zmkfirmware/zmk-build-arm:3.0
 
 RUN mkdir -p /app/firmware
 
 WORKDIR /app
+COPY config/west.yml /app/config/west.yml
 
-COPY config config
-COPY bin/build.sh ./
+# West Init
+RUN west init -l config
+
+# West Update
+RUN west update
+
+# West Zephyr export
+RUN west zephyr-export
+
+COPY bin/build.sh /app
+
+COPY config /app/config
 
 CMD ["./build.sh"]
