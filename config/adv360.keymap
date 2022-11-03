@@ -19,6 +19,9 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=8
+CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=8
+
 / {
   behaviors {
     #include "macros.dtsi"
