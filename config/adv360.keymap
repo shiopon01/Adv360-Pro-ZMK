@@ -36,9 +36,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-        debounce-press-ms = <700>;
-        debounce-release-ms = <700>;
- 
 
         default_layer {
             bindings = <
