@@ -35,7 +35,7 @@
     sands: space_and_shift {
     compatible = "zmk,behavior-hold-tap";
     label = "SPACE_AND_SHIFT";
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
     quick-tap-ms = <125>;
     # space_and_shift;
