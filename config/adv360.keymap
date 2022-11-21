@@ -38,7 +38,7 @@
     flavor = "tap-unless-interrupted";
     tapping-term-ms = <200>;
     quick-tap-ms = <125>;
-    space_and_shift;
+    # space_and_shift;
     bindings = <&kp>, <&kp>;   
     };
   };
