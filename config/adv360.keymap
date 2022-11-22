@@ -19,9 +19,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/backlight.h>
 
-/* #define SAS &sands LEFT_SHIFT SPACE */
-
-
 / {
   behaviors {
     #include "macros.dtsi"
