@@ -19,6 +19,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define SS &sands LEFT_SHIFT SPACE
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -49,7 +51,7 @@
     label = "VOID_AND_SPACESHIFT";
     #binding-cells = <2>;
     flavor = "tap-unless-interrupted";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <50>;
     quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&sands>, <&sands>;   
