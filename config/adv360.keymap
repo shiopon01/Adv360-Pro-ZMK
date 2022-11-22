@@ -33,17 +33,6 @@
         bindings = <&kp>, <&kp>;
     };
  
-    vandss: void_and_spaceshift {
-    compatible = "zmk,behavior-hold-tap";
-    label = "VOID_AND_SPACESHIFT";
-    #binding-cells = <2>;
-    flavor = "tap-unless-interrupted";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <125>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>;   
-    };
-    
     sands: space_and_shift {
     compatible = "zmk,behavior-hold-tap";
     label = "SPACE_AND_SHIFT";
@@ -54,6 +43,17 @@
     global-quick-tap;
     bindings = <&kp>, <&kp>;   
     };
+    
+    vandss: void_and_spaceshift {
+    compatible = "zmk,behavior-hold-tap";
+    label = "VOID_AND_SPACESHIFT";
+    #binding-cells = <2>;
+    flavor = "tap-unless-interrupted";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&sands>, <&sands>;   
+    };    
   };
 
     keymap {
