@@ -19,7 +19,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define SAS(keycode) &sands LEFT_SHIFT keycode
+#define SAS &sands LEFT_SHIFT SPACE
 
 
 / {
