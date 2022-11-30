@@ -21,14 +21,14 @@
 
 #define SS &sands LEFT_SHIFT SPACE
 
+&kp {
+    debounce-press-ms = <10>;
+    debounce-release-ms = <10>;
+};
+
 / {
   behaviors {
     #include "macros.dtsi"
-
-  &kp {
-    debounce-press-ms = <10>;
-    debounce-release-ms = <10>;
-  };
   
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -49,8 +49,6 @@
     quick-tap-ms = <125>;
     global-quick-tap;
     bindings = <&kp>, <&kp>;
-    debounce-press-ms = <10>;
-    debounce-release-ms = <10>;
     }; 
     
     vandss: void_and_spaceshift {
