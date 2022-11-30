@@ -21,10 +21,6 @@
 
 #define SS &sands LEFT_SHIFT SPACE
 
-&kp {
-    debounce-press-ms = <10>;
-    debounce-release-ms = <10>;
-};
 
 / {
   behaviors {
