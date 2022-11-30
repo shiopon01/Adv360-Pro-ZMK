@@ -22,7 +22,12 @@
 #define SS &sands LEFT_SHIFT SPACE
 
 
-/ {
+/ { 
+    &sands {
+      debounce-press-ms = <10>;
+      debounce-release-ms = <10>;
+    };
+    
   behaviors {
     #include "macros.dtsi"
   
@@ -58,11 +63,6 @@
     bindings = <&sands>, <&kp>;   
     }; 
   };
- 
-    &sands {
-      debounce-press-ms = <10>;
-      debounce-release-ms = <10>;
-    };
 
     keymap {
         compatible = "zmk,keymap";
