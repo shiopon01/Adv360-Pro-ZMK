@@ -48,7 +48,9 @@
     tapping-term-ms = <200>;
     quick-tap-ms = <125>;
     global-quick-tap;
-    bindings = <&kp>, <&kp>;   
+    bindings = <&kp>, <&kp>;
+    debounce-press-ms = <10>;
+    debounce-release-ms = <10>;
     }; 
     
     vandss: void_and_spaceshift {
