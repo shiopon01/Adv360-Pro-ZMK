@@ -59,6 +59,11 @@
     }; 
   };
  
+    &sands {
+      debounce-press-ms = <10>;
+      debounce-release-ms = <10>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -104,9 +109,4 @@
         };
 
     };
-};
-
-&sands {
-    debounce-press-ms = <10>;
-    debounce-release-ms = <10>;
 };
