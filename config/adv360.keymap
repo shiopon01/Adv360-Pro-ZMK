@@ -43,7 +43,6 @@
     flavor = "tap-unless-interrupted";
     tapping-term-ms = <100>;
     quick-tap-ms = <125>;
-    global-quick-tap = <0>;
     bindings = <&kp>, <&kp>;
     }; 
   };
