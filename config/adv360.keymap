@@ -43,19 +43,8 @@
     flavor = "tap-unless-interrupted";
     tapping-term-ms = <100>;
     quick-tap-ms = <125>;
-    global-quick-tap;
+    global-quick-tap = <false>;
     bindings = <&kp>, <&kp>;
-    }; 
-    
-    vandss: void_and_spaceshift {
-    compatible = "zmk,behavior-hold-tap";
-    label = "VOID_AND_SPACESHIFT";
-    #binding-cells = <2>;
-    flavor = "tap-unless-interrupted";
-    tapping-term-ms = <100>;
-    quick-tap-ms = <125>;
-    global-quick-tap;
-    bindings = <&sands>, <&kp>;   
     }; 
   };
 
