@@ -41,7 +41,7 @@
     label = "SPACE_AND_SHIFT";
     #binding-cells = <2>;
     flavor = "tap-unless-interrupted";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <175>;
     quick-tap-ms = <125>;
     bindings = <&kp>, <&kp>;
     }; 
