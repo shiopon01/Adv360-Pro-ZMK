@@ -49,7 +49,7 @@
       compatible = "zmk,behavior-mod-morph";
       label = "zenkaku_hankaku";
       #binding-cells = <0>;
-      bindings = <&kp LC(F12 0>, <&kp PG_DN>;
+      bindings = <&kp LC(F12)>, <&kp PG_DN>;
       mods = <(MOD_LCTL|MOD_RCTL|MOD_LGUI|MOD_RGUI|MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;    
     };
   };
