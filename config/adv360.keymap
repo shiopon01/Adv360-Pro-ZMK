@@ -37,14 +37,22 @@
     };
  
     sands: space_and_shift {
-    compatible = "zmk,behavior-hold-tap";
-    label = "SPACE_AND_SHIFT";
-    #binding-cells = <2>;
-    flavor = "tap-unless-interrupted";
-    tapping-term-ms = <175>;
-    quick-tap-ms = <125>;
-    bindings = <&kp>, <&kp>;
-    }; 
+      compatible = "zmk,behavior-hold-tap";
+      label = "SPACE_AND_SHIFT";
+      #binding-cells = <2>;
+      flavor = "tap-unless-interrupted";
+      tapping-term-ms = <175>;
+      quick-tap-ms = <125>;
+      bindings = <&kp>, <&kp>;
+    };
+    
+    chbs: ctrl_h {
+      compatible = "zmk,behavior-mod-morph";
+      label = "CTRL_H";
+      #binding-cells = <0>;
+      bindings = <&kp H>, <&kp BSPC>;
+      mods = <(MOD_RCTRL|MOD_LCTRL)>;    
+    };
   };
 
     keymap {
