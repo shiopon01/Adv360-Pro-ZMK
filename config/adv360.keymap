@@ -51,7 +51,7 @@
       label = "CTRL_H";
       #binding-cells = <0>;
       bindings = <&kp H>, <&kp BSPC>;
-      mods = <(MOD_RCTRL|MOD_LCTRL)>;    
+      mods = <(MOD_RCTL|MOD_LCTL)>;    
     };
   };
 
