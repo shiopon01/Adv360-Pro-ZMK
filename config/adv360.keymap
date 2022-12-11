@@ -41,8 +41,8 @@
       label = "SPACE_AND_SHIFT";
       #binding-cells = <2>;
       flavor = "tap-unless-interrupted";
-      tapping-term-ms = <175>;
-      quick-tap-ms = <125>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <175>;
       bindings = <&kp>, <&kp>;
     };
     zenhan: zenkaku_hankaku {
