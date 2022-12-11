@@ -45,6 +45,13 @@
       quick-tap-ms = <175>;
       bindings = <&kp>, <&kp>;
     };
+    bsdel: backspace_and_delete {
+      compatible = "zmk,behavior-mod-morph";
+      label = "backspace_delete";
+      #binding-cells = <0>;
+      bindings = <&kp BSPC, <&kp DEL>;
+      mods = <(MOD_LCTL|MOD_RCTL|MOD_LGUI|MOD_RGUI|MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;   
+    };    
     zenhan: zenkaku_hankaku {
       compatible = "zmk,behavior-mod-morph";
       label = "zenkaku_hankaku";
